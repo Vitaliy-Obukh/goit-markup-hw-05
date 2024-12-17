@@ -703,12 +703,7 @@ a.decoretion-sumbol {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label:focus {
-  border: #4d5ae5;
-}
-
 .form-input:focus + .icon-form {
-  border: 1px solid #4d5ae5;
   fill: #4d5ae5;
 }
 
