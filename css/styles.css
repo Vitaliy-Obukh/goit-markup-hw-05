@@ -575,11 +575,10 @@ a.decoretion-sumbol {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   border: none;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-weight: 500;
@@ -590,10 +589,12 @@ a.decoretion-sumbol {
   color: #ffffff;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .icon-button-subscribe {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 .button-form-footer:hover,
@@ -632,7 +633,9 @@ a.decoretion-sumbol {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   max-width: 408px;
+  min-height: 584px;
   padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close-modal {
@@ -650,6 +653,8 @@ a.decoretion-sumbol {
   right: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  cursor: pointer;
 }
 
 .button-close-modal:hover,
@@ -657,6 +662,10 @@ a.decoretion-sumbol {
   background-color: #404bbf;
   fill: #ffffff;
   border: none;
+}
+
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-modal {
@@ -684,7 +693,7 @@ a.decoretion-sumbol {
 .form-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
@@ -711,6 +720,7 @@ a.decoretion-sumbol {
   letter-spacing: 0.04em;
   color: #2e2f42;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
 }
 
 .form-input:focus + .icon-form {
@@ -723,7 +733,7 @@ a.decoretion-sumbol {
 
 .icon-form {
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   fill: #2e2f42;
@@ -753,15 +763,17 @@ a.decoretion-sumbol {
   resize: none;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: transparent;
   outline-color: transparent;
   outline-style: none;
   padding: 8px 16px;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-comment-input::placeholder {
@@ -778,14 +790,14 @@ a.decoretion-sumbol {
 
 .checkbox-input:checked + .form-checkbox-label .check {
   background-color: #404bbf;
-  border: 1px solid #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
 .form-checkbox-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   cursor: pointer;
@@ -827,7 +839,7 @@ a.decoretion-sumbol {
   background-color: #4d5ae5;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   font-weight: 500;
   font-size: 16px;
